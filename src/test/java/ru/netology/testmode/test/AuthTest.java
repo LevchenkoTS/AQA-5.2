@@ -1,6 +1,5 @@
 package ru.netology.testmode.test;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -10,7 +9,8 @@ import java.time.Duration;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.withText;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 import static ru.netology.testmode.data.DataGenerator.Registration.getRegisteredUser;
 import static ru.netology.testmode.data.DataGenerator.Registration.getUser;
 import static ru.netology.testmode.data.DataGenerator.getRandomLogin;
